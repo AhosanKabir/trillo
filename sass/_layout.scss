@@ -1,0 +1,113 @@
+.container{
+    //border: 5px solid yellow;
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-Grey-light-2);
+    box-shadow:var(--color-shadow-dark);
+
+
+    min-height: 100vh;
+
+    @media only screen and (max-width:$bp-largest){
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+}
+
+.header{
+   // border: 5px solid blue;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--line);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width:$bp-smallest){
+       flex-wrap: wrap;
+       align-content: space-around;
+       height: 11rem;
+    }
+}
+
+.content{
+    display: flex;
+    //min-height: inherit;
+    //color: white;
+
+    @media only screen and (max-width:$bp-medium){
+        flex-direction: column;
+    }
+}
+
+.sidebar{
+    //border: 4px solid indianred;
+    background-color: var( --color-Grey-dark-1);
+    flex:0 0 18%;
+
+    //after doing components part then come here to solve the problem
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-view{
+    //border: 4px solid violet;
+    background-color: #fff;
+
+    //test purpose ..description ar kaj korte gele content overflow kore chole zai. tai height pore delete kore deya lage.. kintu 1st aa diye kaj kora valo 
+    //height: 80rem;
+    //background-color: orangered;
+
+    //flex:0 0 82%;
+    flex: 1;
+}
+
+.detail{
+    display: flex;
+    //flex-wrap: wrap;
+    padding: 4.5rem;
+    font-size: 1.4rem;
+    background-color: var(--color-Grey-light-1);
+    border-bottom: var(--line) ;
+
+    @media only screen and (max-width:$bp-medium){
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width:$bp-small){
+        flex-direction: column;
+    }
+
+}
+
+.description{
+    background-color: #fff;
+    //background-color: violet;
+    box-shadow: var(--color-shadow-light);
+    margin-right: 4.5rem;
+    padding: 3rem;
+    flex: 0 0 60%;
+
+    @media only screen and (max-width:$bp-medium){
+        padding: 2rem;
+        margin-right: 3rem;
+    }
+
+    @media only screen and (max-width:$bp-small){
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+.user-reviews{
+    //background-color: aquamarine;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
